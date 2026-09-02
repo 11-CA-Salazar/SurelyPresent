@@ -1,7 +1,7 @@
 package com.example.surelypresent.quarter2;
 
 import org.junit.Test;
-public class joaquinfunction {
+public class joaquinFunction {
     @Test
     public void printMyProfile() {
 
