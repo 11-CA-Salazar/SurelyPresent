@@ -2,7 +2,7 @@ package com.example.surelypresent.quarter2;
 
 import org.junit.Test;
 
-public class galangfunction {
+public class galangFunction {
     @Test
     public void printMyProfile() {
 
