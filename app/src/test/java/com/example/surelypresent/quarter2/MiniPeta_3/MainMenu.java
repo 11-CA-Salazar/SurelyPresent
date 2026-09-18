@@ -27,5 +27,9 @@ public class MainMenu {
             simulatedUserInput.append("9999\n"); // E.g., Type a specific value (like a PIN or a quantity)
             simulatedUserInput.append("3\n");    // E.g., Go back to the Main Menu
 
+
         }
+
+    public void start(Scanner scanner) {
     }
+}
