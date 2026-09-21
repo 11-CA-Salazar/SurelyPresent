@@ -2,10 +2,9 @@ package com.example.surelypresent.quarter2.MiniPeta_3;
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class MainMenu {
+public class MainSystemTest {
 
     @Test
     public void testCompleteSystemFlow() {
@@ -35,11 +34,11 @@ public class MainMenu {
             } else if (interactionCount == 2) {
                 // Simulating the user choosing option '2', then typing '300'
                 simulatedUserInput.append("2\n");
-                simulatedUserInput.append("300\n");
+
             } else {
                 // Simulating the user choosing option '2', then typing '5000'
                 simulatedUserInput.append("2\n");
-                simulatedUserInput.append("5000\n");
+
             }
             interactionCount++;
         }
@@ -49,14 +48,12 @@ public class MainMenu {
          * You don't always need a loop to test inputs. You can hardcode
          * a specific path the user takes through your menus.
          */
-
-
         System.out.println("Generating inputs for specific features...");
-
         simulatedUserInput.append("3\n");    // E.g., Enter a specific sub-menu (like Settings or Combo Meals)
         simulatedUserInput.append("1\n");    // E.g., Choose an option inside that sub-menu
         simulatedUserInput.append("9999\n"); // E.g., Type a specific value (like a PIN or a quantity)
         simulatedUserInput.append("3\n");    // E.g., Go back to the Main Menu
+
         /*
          * PART 3: Simulating the Exit Command
          * CRITICAL: You MUST send the exit number so your main 'while(isRunning)' loop stops.
@@ -87,11 +84,8 @@ public class MainMenu {
          * TODO: Change "MainMenu" to the exact name of your main system class.
          */
         MainMenu mainSystem = new MainMenu();
-
         // Start your system and pass our automated scanner into it.
         mainSystem.start(scanner);
     }
-    public void start(Scanner scanner) {
-        new ColorChanger().ColorChange(scanner);
-    }
 }
+
