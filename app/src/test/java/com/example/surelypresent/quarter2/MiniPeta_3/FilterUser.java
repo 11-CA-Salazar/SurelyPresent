@@ -64,17 +64,6 @@ public class FilterUser {
                     break;
 
                 case 6:
-                    System.out.println("===WELCOME BACK ASST./SECRETARY===");
-                    System.out.println("##################################");
-                    System.out.println("##################################");
-                    System.out.println("##################################");
-                    System.out.println("##################################");
-                    System.out.println("##################################");
-                    System.out.println("##################################\n");
-                    choice++; //WILL SWITCH TO AUDITOR/TREASURER
-                    break;
-
-                case 7:
                     System.out.println("===WELCOME BACK TREASURER/AUDITOR===");
                     System.out.println("##################################");
                     System.out.println("##################################");
@@ -82,11 +71,11 @@ public class FilterUser {
                     System.out.println("##################################");
                     System.out.println("##################################");
                     System.out.println("##################################\n");
-                    choice++; //WILL SWITCH TO REGULAR STUDENT
+                    choice++; // WILL SWITCH TO REGULAR STUDENT
                     break;
 
-                case 8:
-                    System.out.println("====== WELCOME BACK DEAR STUDENT======");
+                case 7:
+                    System.out.println("=======WELCOME BACK DEAR STUDENT======");
                     System.out.println("##################################");
                     System.out.println("##################################");
                     System.out.println("##################################");
