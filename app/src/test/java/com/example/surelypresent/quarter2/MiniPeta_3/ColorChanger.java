@@ -6,18 +6,29 @@ public class ColorChanger {
         String present = "Green";
         String late = "Yellow";
         String absent = "Red";
-        String user = scanner.nextLine();
 
-        switch (user) {
-            case "Green":  // If user is present and late he is present
-                System.out.println("User color is: " + present);
-                break;
-            case "Yellow": // If user is present and late he is late
-                System.out.println("User Color is: " + late);
-                break;
-            case "Red": // If user is present and late he is absent
-                System.out.println("User Color is:" + absent);
-                break;
+        int choice = 1;
+        boolean chosed = true;
+
+        while(chosed) {
+                    switch (choice) {
+                        case 1:  // If user is present and late he is present
+                            System.out.println("User color is: " + present);
+                            choice++;
+                            break;
+                        case 2: // If user is present and late he is late
+                            System.out.println("User color is: " + late);
+                            choice++;
+                            break;
+                        case 3: // If user is present and late he is absent
+                            System.out.println("User color is: " + absent);
+                            chosed = false;
+                            break;
+                        default:
+                            chosed = false;
+                            break;
+                    }
+
         }
     }
 }
