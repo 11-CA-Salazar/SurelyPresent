@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class MainMenu{
     public void start(Scanner scanner){
         System.out.println("=============");
-        System.out.println("  Main Menu");
+        System.out.println("  Main Menu  ");
+        System.out.println("=============");
         System.out.println("#############");
         System.out.println("#############");
         System.out.println("#############");
@@ -24,17 +25,25 @@ public class MainMenu{
                 Settings.execute(scanner);
 
             }else if (choice == 2){
+                System.out.println("===============");
+                System.out.println(" USER FUNCTION ");
+                System.out.println("===============");
+                UserFunction userFunction = new UserFunction();
+                UserFunction.execute(scanner);
+            }else if (choice == 3){
                 System.out.println("================");
                 System.out.println("FILTERING USER!");
                 System.out.println("================\n");
                 FilterUser filterUser = new FilterUser();
                 FilterUser.execute(scanner);
-            }else if (choice == 3){
+            }else if( choice == 4){
+
                 System.out.println("==============");
                 System.out.println("COLOR CHANGER!");
                 System.out.println("==============\n");
                 ColorChanger colorChanger = new ColorChanger();
                 ColorChanger.execute(scanner);
+
             }else {
                 chosed = false;
             }
