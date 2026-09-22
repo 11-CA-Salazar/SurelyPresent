@@ -7,6 +7,10 @@ public class ColorChanger {
         String late = "Yellow";
         String absent = "Red";
 
+        System.out.println("================================");
+        System.out.println("========= USER STATUS ==========");
+        System.out.println("================================");
+
         int choice = 1;
         boolean chosed = true;
 
