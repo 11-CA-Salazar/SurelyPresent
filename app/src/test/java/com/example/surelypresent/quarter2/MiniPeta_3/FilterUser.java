@@ -1,21 +1,94 @@
-public static void main(String[] args) {
-    User.java
-    public class filterUser {
+package com.example.surelypresent.quarter2.MiniPeta_3;
 
-    userList.add(new User(1, "clyde", 16, true));
-    userList.add(new User(2, "cerbito", 16, true));
-    userList.add(new User(3, "joaquin", 16, true));
-    userList.add(new User(4, "galang", 16, true));
+import java.util.Scanner;
 
-    // Get active users aged 18+
-    List<User> filtered = filterUsers(userList, 18, true);
+public class FilterUser {
+    public static void execute(Scanner scanner) {
 
-    System.out.println("Filtered Users (age 18+, active):");
-    if (filtered.isEmpty()) {
-        System.out.println("No users match the filter.");
-    } else {
-        for (User u : filtered) {
-            System.out.println("- " + u);
+        int choice = 1;
+        boolean chosed = true;
+
+        System.out.println("What type of user are you?");
+        System.out.println("1. Admin");
+        System.out.println("2. Teacher");
+        System.out.println("3. Student\n");
+
+        while (chosed) {
+            switch (choice) {
+                case 1:
+                    System.out.println("=====WELCOME BACK ADMIN======");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################\n");
+                    choice++; // MOVES TO THE TEACHER OPTION
+                    break;
+
+                case 2:
+                    System.out.println("=====WELCOME BACK TEACHER======");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################");
+                    System.out.println("#############################\n");
+                    choice++; // MOVES TO THE QUESTION "ARE YOU AN OFFICER?"
+                    break;
+
+                case 3:
+                    System.out.println("=====ARE YOU AN OFFICER?=====");
+                    System.out.println("1. Yes");
+                    System.out.println("2. No\n");
+                    choice++; // MOVES TO THE OFFICERS OPTIONS
+                    break;
+
+                case 4:
+                    System.out.println("What officer are you?");
+                    System.out.println("1. Vice/President");
+                    System.out.println("2. Asst./Secretary");
+                    System.out.println("3. Treasurer/Auditor\n");
+                    choice++; // WILL SWITC TO THE VICE PRESIDENT OR IVCE PRESIDENT
+                    break;
+
+                case 5:
+                    System.out.println("===WELCOME BACK VICE/PRESIDENT===");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################\n");
+                    choice++; // WILL SWITCH TO TREASURER OR AUDITOR
+                    break;
+
+                case 6:
+                    System.out.println("===WELCOME BACK TREASURER/AUDITOR===");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################\n");
+                    choice++; // WILL SWITCH TO REGULAR STUDENT
+                    break;
+
+                case 7:
+                    System.out.println("=======WELCOME BACK DEAR STUDENT======");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################");
+                    System.out.println("##################################\n");
+                    chosed = false; // ENDS THE LOOP
+                    break;
+
+                default:
+                    chosed = false;
+                    break;
+            }
         }
     }
 }
