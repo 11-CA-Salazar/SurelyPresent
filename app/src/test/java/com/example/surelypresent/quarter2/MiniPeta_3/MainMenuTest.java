@@ -1,10 +1,10 @@
-package com.example.surelypresent.quarter2.MiniPeta_3;
+package com.example.surelypresent.quarter2.MiniPeta_3; // TODO: Change this to your actual package name
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class MainSystemTest {
+public class MainMenuTest {
 
     @Test
     public void testCompleteSystemFlow() {
@@ -15,6 +15,7 @@ public class MainSystemTest {
          * every number or word the user would type into this builder.
          */
         StringBuilder simulatedUserInput = new StringBuilder();
+
 
         System.out.println("--- GENERATING SIMULATED USER INPUTS ---");
 
@@ -34,11 +35,11 @@ public class MainSystemTest {
             } else if (interactionCount == 2) {
                 // Simulating the user choosing option '2', then typing '300'
                 simulatedUserInput.append("2\n");
-
+                simulatedUserInput.append("300\n");
             } else {
                 // Simulating the user choosing option '2', then typing '5000'
                 simulatedUserInput.append("2\n");
-
+                simulatedUserInput.append("5000\n");
             }
             interactionCount++;
         }
@@ -84,6 +85,7 @@ public class MainSystemTest {
          * TODO: Change "MainMenu" to the exact name of your main system class.
          */
         MainMenu mainSystem = new MainMenu();
+
         // Start your system and pass our automated scanner into it.
         mainSystem.start(scanner);
     }
