@@ -29,19 +29,30 @@ public class GymMenu {
 
                         if (tierInput.equals("1")) {
                             System.out.println("Trainer assigned\n");
+                            System.out.println("-----USER PROFILE-----");
+                            System.out.println("Username:             ");
+                            System.out.println("Membership: vip       ");
+                            System.out.println("Trainer hired:        \n");
+                            System.out.println("============================");
+                            System.out.println("         3. EXIT            ");
+                            System.out.println("============================\n");
 
                         } else if (tierInput.equals("2")) {
                             System.out.println("Need to upgrade membership\n");
+                            System.out.println("-----USER PROFILE-----");
+                            System.out.println("Username:             ");
+                            System.out.println("Membership: vip       ");
+                            System.out.println("Trainer hired:        \n");
                             System.out.println("============================");
                             System.out.println("         3. EXIT            ");
-                            System.out.println("============================");
+                            System.out.println("============================\n");
 
                         }
                     }
                     break;
 
                 case "3":
-                    System.out.println("Succesfully exited the app gym...");
+                    System.out.println("Succesfully exited the app gym...\n");
                     lifting = false;
                     break;
 
