@@ -23,6 +23,21 @@ public class GymMenu {
                     System.out.println("Do you want to hire a trainer?(Note: ONLY VIP CAN HIRE)");
                     System.out.println("1. Yes ");
                     System.out.println("2. No\n");
+
+                    if (scanner.hasNextLine()) {
+                        String tierInput = scanner.nextLine().trim();
+
+                        if (tierInput.equals("1")) {
+                            System.out.println("Trainer assigned\n");
+
+                        } else if (tierInput.equals("2")) {
+                            System.out.println("Need to upgrade membership\n");
+                            System.out.println("============================");
+                            System.out.println("         3. EXIT            ");
+                            System.out.println("============================");
+
+                        }
+                    }
                     break;
 
                 case "3":
