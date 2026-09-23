@@ -13,33 +13,21 @@ public class GymMenu {
         while (lifting && scanner.hasNextLine()) {
             String input = scanner.nextLine().trim();
 
+
             switch (input) {
                 case "1":
                     System.out.println("Entering gym...\n");
                     break;
 
                 case "2":
-                    System.out.println("Does the user want to hire a trainer? (Note: ONLY VIP CAN HIRE TRAINERS)");
-                    System.out.println("1. Yes");
+                    System.out.println("Do you want to hire a trainer?(Note: ONLY VIP CAN HIRE)");
+                    System.out.println("1. Yes ");
                     System.out.println("2. No\n");
+                    break;
 
-                    if (scanner.hasNextLine()) {
-                        String tierInput = scanner.nextLine().trim();
-
-                        if (tierInput.equals("1")) {
-                            System.out.println("Trainer assigned\n");
-                            System.out.println("============================");
-                            System.out.println("         3. EXIT            ");
-                            System.out.println("============================\n");
-
-                        } else if (tierInput.equals("2")) {
-                            System.out.println("Need to upgrade membership\n");
-                            System.out.println("============================");
-                            System.out.println("         3. EXIT            ");
-                            System.out.println("============================\n");
-
-                        }
-                    }
+                case "3":
+                    System.out.println("Succesfully exited the app gym...");
+                    lifting = false;
                     break;
 
                 default:
