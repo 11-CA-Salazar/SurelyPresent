@@ -77,13 +77,13 @@ public class FilterUser {
                     System.out.println("          1.STUDENT HANDBOOK        ");
                     System.out.println("===============================\n");
                     System.out.println("================================");
-                    System.out.println("          2.ACADEMIC MANAGEMENT   ");
+                    System.out.println("          2.REGISTER: CLASSROOM   ");
                     System.out.println("================================\n");
                     System.out.println("==============================");
-                    System.out.println("          3.STUDENT SERVICES        ");
+                    System.out.println("          3.REGISTER: RESTROOM        ");
                     System.out.println("===============================\n");
                     System.out.println("================================");
-                    System.out.println("          4.SUPPORT RESOURCES        ");
+                    System.out.println("          4.OTHER:       ");
                     System.out.println("================================\n");
                     System.out.println("================================");
                     System.out.println("          5.CLUBS AND ORGANIZATION DIRECTORY ");
@@ -91,60 +91,66 @@ public class FilterUser {
                     choice++; // WILL SWITCH TO TREASURER OR AUDITOR
                     break;
 
+
                 case 6:
-                    System.out.println("===WELCOME BACK VICE/PRESIDENT===");
+                    System.out.println("===WELCOME BACK ASST./SECRETARY===");
                     System.out.println("==============================");
                     System.out.println("          1.STUDENT HANDBOOK        ");
                     System.out.println("===============================\n");
                     System.out.println("================================");
-                    System.out.println("          2.ACADEMIC MANAGEMENT   ");
+                    System.out.println("          2.REGISTER: CLASSROOM  ");
                     System.out.println("================================\n");
                     System.out.println("==============================");
-                    System.out.println("          3.STUDENT SERVICES        ");
+                    System.out.println("          3.REGISTER: RESTROOM        ");
                     System.out.println("===============================\n");
+                    System.out.println("==================================");
+                    System.out.println("          4. CLINIC                ");
+                    System.out.println("====================================\n");
                     System.out.println("================================");
-                    System.out.println("          4.SUPPORT RESOURCES        ");
+                    System.out.println("          5.OTHER;                ");
                     System.out.println("================================\n");
                     System.out.println("================================");
-                    System.out.println("          5.CLUBS AND ORGANIZATION DIRECTORY ");
+                    System.out.println("          6.CLUBS AND ORGANIZATION DIRECTORY ");
                     System.out.println("================================\n");
-                    choice++; // WILL SWITCH TO TREASURER OR AUDITOR
-                    break;
+
 
                 case 7:
                     System.out.println("===WELCOME BACK TREASURER/AUDITOR===");
-                    System.out.println("          1.BUDGET MANAGEMENT        ");
+                    System.out.println("          1.STUDENT HANDBOOK        ");
                     System.out.println("===============================\n");
                     System.out.println("================================");
-                    System.out.println("          2.FINANCIAL REPORTING     ");
+                    System.out.println("          2.REGISTER: CLASSROOM     ");
                     System.out.println("================================\n");
                     System.out.println("==============================");
-                    System.out.println("          3.RECORD KEEPING      ");
-                    System.out.println("===============================\n");
+                    System.out.println("          3.REGISTER: RESTROOM      ");
+                    System.out.println("====================================\n");
                     System.out.println("================================");
-                    System.out.println("          4.PROCESS PAYMENT        ");
+                    System.out.println("          4. CLINIC                ");
+                    System.out.println("====================================\n");
+                    System.out.println("================================");
+                    System.out.println("          4.OTHER                 ");
                     System.out.println("================================\n");
                     System.out.println("================================");
-                    System.out.println("          5.PROFIT DISTRIBUTION ");
+                    System.out.println("          5.AUDIT               ");
                     System.out.println("================================\n");
                     choice++; // WILL SWITCH TO REGULAR STUDENT
                     break;
 
                 case 8:
                     System.out.println("=======WELCOME BACK DEAR STUDENT======");
-                    System.out.println("          1.GRADES             ");
+                    System.out.println("          1.STUDENT HANDBOOK             ");
                     System.out.println("===============================\n");
                     System.out.println("================================");
-                    System.out.println("          2.CLASS SCHEDULE     ");
+                    System.out.println("          2.REGISTER: CLASSROOM     ");
                     System.out.println("================================\n");
                     System.out.println("==============================");
-                    System.out.println("          3.SCHOOL EMAIL     ");
+                    System.out.println("          3.REGISTER: RESTROOM     ");
+                    System.out.println("====================================\n");
+                    System.out.println("================================");
+                    System.out.println("          4.REGISTER: CLINIC                ");
                     System.out.println("===============================\n");
                     System.out.println("================================");
-                    System.out.println("          4.ASSIGNMENTS      ");
-                    System.out.println("================================\n");
-                    System.out.println("================================");
-                    System.out.println("          5.QUIPPER           ");
+                    System.out.println("          4.OTHER:              ");
                     System.out.println("================================\n");
                     chosed = false; // ENDS THE LOOP
                     break;
