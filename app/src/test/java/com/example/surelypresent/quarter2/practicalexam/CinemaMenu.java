@@ -2,44 +2,54 @@ package com.example.surelypresent.quarter2.practicalexam;
 
 import java.util.Scanner;
 public class CinemaMenu {
-
-    // Step 1: Test underage restriction (< 18)
-    // Step 2: Test legal age access (>= 18)
-    // Step 3: Test snack purchase
-    // Step 4: Exit system
     public static void start(Scanner scanner) {
-        System.out.println("======================================");
-        System.out.println("==== WOULD YOU LIKE TO BUY TICKET? ===");
-        System.out.println("======================================");
-
-
         boolean running = true;
 
+        while (running) {
+            System.out.println("==== CINEMA TICKET SYSTEM ====");
+            System.out.println("Choose an option");
+            System.out.println("1. Buy a ticket");
+            System.out.println("2. Buy Snacks");
+            System.out.println("3. Exit.");
 
-        while (running && scanner.hasNextLine()) {
             String choice = scanner.nextLine().trim();
-            System.out.println("Does user want to buy a ticket?");
-            System.out.println("1. Yes");
-            System.out.println("2. No\n");
-            int age = scanner.nextInt();
             switch (choice) {
                 case "1":
-                    if (choice.equals("1")) {
-                        System.out.println("User bought Tickets");
-                    } else if (choice.equals("2\n")) {
-                        System.out.println("User did not bought Tickets");
-                    }
-                    if (age < 18) {
-                        System.out.println("Access denied");
-                    } else if (age >= 18) {
-                        System.out.println("Ticket Printed");
-
-                    }
+                    buyTicket(scanner);
                     break;
-                default:
-            }
-            running = false;
+                    case "2":
+                        BuySnacks(scanner);
+                        break;
+                    case "3":
+                        System.out.println("Exiting System");
+                        running = false;
+                        break;
+                    default:
+                }
             }
         }
+    public static void buyTicket(Scanner scanner) {
+        System.out.println("Please enter age:");
+        int age = 0;
+        try {
+            age = Integer.parseInt(scanner.nextLine().trim());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid number, please return to main menu");
+        }
+        if (age < 18) {
+            System.out.println("Access denied!");
+        } else
+            System.out.println("Ticket Printed");
     }
+    public static void BuySnacks(Scanner scanner) {
+        System.out.println("--- Snack Menu ---");
+        System.out.println("1. Popcorn - $5");
+        System.out.println("2. Soda - $3");
+        System.out.println("3. Candy - $2");
+        System.out.println("Snack purchased successfully! Enjoy!");
+    }
+}
+
+
+
 
