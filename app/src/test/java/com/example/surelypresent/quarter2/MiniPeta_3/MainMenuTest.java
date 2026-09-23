@@ -4,7 +4,7 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class  MainMenuTest {
+public class q  MainMenuTest {
 
     @Test
     public void testCompleteSystemFlow() {
