@@ -58,6 +58,12 @@ public class UserFunction{
                         choice++;
                         break;
                     case 6:
+                        System.out.println("=CALENDAR=\n");
+                        System.out.println();
+                        System.out.println("1 2 3 4 5 6 7");
+                        choice++;
+                        break;
+                    case 7:
                         System.out.println("=ATTENDANCE=\n");
                         System.out.println("Search:__________\n");
                         System.out.println("=================");
@@ -67,10 +73,12 @@ public class UserFunction{
                         System.out.println("#################");
                         System.out.println("#################");
                         System.out.println("=================");
-                    case 7:
-                        System.out.println
+                        chosed = false;
+                        break;
 
-
+                    default:
+                        chosed = false;
+                        break;
 
                 }
             }
