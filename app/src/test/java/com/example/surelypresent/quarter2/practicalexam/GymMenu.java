@@ -28,21 +28,26 @@ public class GymMenu {
                         String tierInput = scanner.nextLine().trim();
 
                         if (tierInput.equals("1")) {
-                            System.out.println("Trainer assigned\n");
+
                             System.out.println("-----USER PROFILE-----");
-                            System.out.println("Username:             ");
-                            System.out.println("Membership: vip       ");
-                            System.out.println("Trainer hired:        \n");
+                            System.out.println("Username: ########            ");
+                            System.out.println("Membership: VIP       ");
+                            System.out.println("Trainer hired: #######       \n");
+
+                            System.out.println("Trainer ####### assigned\n");
+
                             System.out.println("============================");
                             System.out.println("         3. EXIT            ");
                             System.out.println("============================\n");
 
                         } else if (tierInput.equals("2")) {
-                            System.out.println("Need to upgrade membership\n");
                             System.out.println("-----USER PROFILE-----");
-                            System.out.println("Username:             ");
-                            System.out.println("Membership: vip       ");
-                            System.out.println("Trainer hired:        \n");
+                            System.out.println("Username: #########           ");
+                            System.out.println("Membership: Regular (UPGRADE?) ");
+                            System.out.println("Trainer hired: (UNAVAILABLE: VIP membership needed)        \n");
+
+                            System.out.println("Need to upgrade membership\n");
+
                             System.out.println("============================");
                             System.out.println("         3. EXIT            ");
                             System.out.println("============================\n");
