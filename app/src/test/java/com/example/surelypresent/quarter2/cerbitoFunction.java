@@ -6,7 +6,7 @@ public class cerbitoFunction {
     public void printMyProfile() {
         // ---1. THE INPUT (storing your personal details in variables)--//
         String myName = "Gelo";
-        String petName = "Clyde";
+        String petName = "gelo";
         String favFood = "fries";
         int myAge = 16;
 
