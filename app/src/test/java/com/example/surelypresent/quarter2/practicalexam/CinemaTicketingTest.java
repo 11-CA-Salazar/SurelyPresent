@@ -21,7 +21,6 @@ public class CinemaTicketingTest {
         System.out.println("--- TEST DATA GENERATION COMPLETE ---\n");
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
-        CinemaMenu cinemaSystem = new CinemaMenu();
-        cinemaSystem.start(scanner);
+        CinemaMenu.start(scanner);
     }
 }
