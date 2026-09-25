@@ -6,7 +6,7 @@ public class GymAccessTest {
     @Test
     public void testGymFlow() {
         StringBuilder automatedInput = new StringBuilder();
-        System.out.println("--- GENERATING GYM TEST DATA ---");
+        System.out.println("\n--- GENERATING GYM TEST DATA ---");
 // Step 1: Enter gym floor option
         automatedInput.append("1\n"); // Choose Enter Gym
 // Step 2: Test VIP membership tier (Level 1)
