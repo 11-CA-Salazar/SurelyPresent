@@ -12,5 +12,20 @@ public class FastFoodMenu {
         System.out.println("1. Burger");
         System.out.println("2. Fries");
         System.out.println("3. Exit");
+
+        while (ordering && scanner.hasNextLine()) {
+            String input = scanner.nextLine().trim();
+            switch (input) {
+                case "1":
+                    System.out.println("Successfully ordered a burger");
+                    break;
+                case "2":
+                    System.out.println("Successfully ordered fries");
+                    break;
+                case "3":
+                    ordering = false;
+                    break;
+            }
+        }
     }
 }
