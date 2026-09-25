@@ -23,21 +23,31 @@ public class FastFoodMenu {
                     if (scanner.hasNextLine()) {
                         String tierInput = scanner.nextLine().trim();
                         if (tierInput.equals("1")) {
-                            System.out.println("Successfully upgraded to a combo meal");
+                            System.out.println("Successfully upgraded burger to a combo meal");
                         } else if (tierInput.equals("2")) {
-                            System.out.println("Successfully ordered a burger (solo)");
+                            System.out.println("Successfully ordered burger as solo");
                         }
                     }
                     break;
                 case "2":
-                    System.out.println("Successfully ordered fries");
+                    System.out.println("Would you like to upgrade fries to a combo meal?");
+                    System.out.println("1. Yes");
+                    System.out.println("2. No");
+                    if (scanner.hasNextLine()) {
+                        String tierInput = scanner.nextLine().trim();
+                        if (tierInput.equals("1")) {
+                            System.out.println("Successfully upgraded fries to a combo meal");
+                        } else if (tierInput.equals("2")) {
+                            System.out.println("Successfully ordered fries as regular");
+                        }
+                    }
                     break;
                 case "3":
-                    System.out.println("Exiting system... Thank you!");
+                    System.out.println("Exiting system... Thank you for your order!");
                     ordering = false;
                     break;
                 default:
-                    System.out.println("Invalid option — please try again.");
+                    System.out.println("Invalid option — please enter 1, 2, or 3.");
             }
         }
     }
