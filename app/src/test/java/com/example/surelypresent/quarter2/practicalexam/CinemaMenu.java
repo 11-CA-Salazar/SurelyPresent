@@ -12,7 +12,7 @@ public class CinemaMenu {
             System.out.println("2. Buy Snacks");
             System.out.println("3. Exit.");
 
-            String choice = scanner.nextLine().trim();
+            String choice = scanner.nextLine().trim(); // Selection Menu
             switch (choice) {
                 case "1":
                     buyTicket(scanner);
@@ -28,7 +28,7 @@ public class CinemaMenu {
                 }
             }
         }
-    public static void buyTicket(Scanner scanner) {
+    public static void buyTicket(Scanner scanner) { // Class for buying ticket
         System.out.println("Please enter age:");
         int age = 0;
         try {
@@ -41,7 +41,7 @@ public class CinemaMenu {
         } else
             System.out.println("Ticket Printed");
     }
-    public static void BuySnacks(Scanner scanner) {
+    public static void BuySnacks(Scanner scanner) { // Class for buying Snacks
         System.out.println("--- Snack Menu ---");
         System.out.println("1. Popcorn - $5");
         System.out.println("2. Soda - $3");
