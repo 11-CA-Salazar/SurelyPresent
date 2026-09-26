@@ -43,9 +43,9 @@ public class GymMenu {
                             System.out.println("Trainer ####### assigned\n");
 
                             // Display exit navigation banner
-                            System.out.println("============================");
+                            System.out.println("=============================");
                             System.out.println("         3. EXIT            ");
-                            System.out.println("============================\n");
+                            System.out.println("=============================\n");
 
                         } else if (tierInput.equals("2")) { // Option 2: The automated input is 2, but the option should be one: User tries to hire a trainer but needed to upgrade
                             // Display Regular profile details with upgrade notification
@@ -57,9 +57,9 @@ public class GymMenu {
                             System.out.println("Need to upgrade membership\n");
 
                             // Display exit navigation banner
-                            System.out.println("============================");
+                            System.out.println("=============================");
                             System.out.println("         3. EXIT            ");
-                            System.out.println("============================\n");
+                            System.out.println("==============================\n");
                         }
                     }
                     break;
