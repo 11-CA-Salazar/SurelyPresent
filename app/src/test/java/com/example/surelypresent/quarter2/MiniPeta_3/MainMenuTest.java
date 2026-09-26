@@ -11,65 +11,155 @@ public class MainMenuTest {
     public void testCompleteSystemFlow() {
 
 
+        // ==========================================
+        // AUTOMATED INPUT
+        // ==========================================
 
-        StringBuilder simulatedUserInput = new StringBuilder();
+        StringBuilder simulatedUserInput =
+                new StringBuilder();
 
-        System.out.println("--- GENERATING SIMULATED USER INPUTS ---");
+
+        // ==========================================
+        // CLYDE - ADMIN
+        // ==========================================
 
         simulatedUserInput.append("1\n");
         simulatedUserInput.append("Clyde\n");
         simulatedUserInput.append("Clyde123\n");
 
+
+        // ==========================================
+        // JOAQUIN - TEACHER
+        // ==========================================
+
         simulatedUserInput.append("1\n");
         simulatedUserInput.append("Joaquin\n");
         simulatedUserInput.append("Joaquin123\n");
+
+
+        // ==========================================
+        // CERBITO - STUDENT
+        // ==========================================
 
         simulatedUserInput.append("1\n");
         simulatedUserInput.append("Cerbito\n");
         simulatedUserInput.append("Cerbito123\n");
 
-        simulatedUserInput.append("1\n");
-        simulatedUserInput.append("Sophia\n");
-        simulatedUserInput.append("Sophia123\n");
 
-        Scanner scanner = new Scanner(
-                new ByteArrayInputStream(
-                        simulatedUserInput.toString().getBytes()
-                )
-        );
+        // ==========================================
+        // CREATE SCANNER
+        // ==========================================
 
-        LoginSystem loginSystem = new LoginSystem();
+        Scanner scanner =
+                new Scanner(
+                        new ByteArrayInputStream(
+                                simulatedUserInput
+                                        .toString()
+                                        .getBytes()
+                        )
+                );
 
-        System.out.println("\n========================================");
-        System.out.println("       LOGIN TEST #1 - ADMIN");
+
+        // ==========================================
+        // CREATE LOGIN SYSTEM
+        // ==========================================
+
+        LoginSystem loginSystem =
+                new LoginSystem();
+
+
+        // ==========================================
+        // LOGIN TEST #1
+        // CLYDE
+        // ==========================================
+
+        System.out.println();
+        System.out.println("========================================");
+        System.out.println("             LOGIN TEST #1");
         System.out.println("========================================");
 
-        loginSystem.authenticate(scanner);
+        String role1 =
+                loginSystem.authenticate(scanner);
 
-        System.out.println("\n========================================");
-        System.out.println("       LOGIN TEST #2 - TEACHER");
+
+        if (role1 != null) {
+
+            System.out.println();
+            System.out.println("Connecting to UserFeature...");
+
+            UserFeature.execute(
+                    scanner,
+                    role1
+            );
+        }
+
+
+        // ==========================================
+        // LOGIN TEST #2
+        // JOAQUIN
+        // ==========================================
+
+        System.out.println();
+        System.out.println("========================================");
+        System.out.println("             LOGIN TEST #2");
         System.out.println("========================================");
 
-        loginSystem.authenticate(scanner);
+        String role2 =
+                loginSystem.authenticate(scanner);
 
 
-        System.out.println("\n========================================");
-        System.out.println("       LOGIN TEST #3 - STUDENT");
+        if (role2 != null) {
+
+            System.out.println();
+            System.out.println("Connecting to UserFeature...");
+
+            UserFeature.execute(
+                    scanner,
+                    role2
+            );
+        }
+
+
+        // ==========================================
+        // LOGIN TEST #3
+        // CERBITO
+        // ==========================================
+
+        System.out.println();
+        System.out.println("========================================");
+        System.out.println("             LOGIN TEST #3");
         System.out.println("========================================");
 
-        loginSystem.authenticate(scanner);
+        String role3 =
+                loginSystem.authenticate(scanner);
 
 
-        System.out.println("\n========================================");
-        System.out.println("       LOGIN TEST #4 - INVALID");
-        System.out.println("========================================");
+        if (role3 != null) {
 
-        loginSystem.authenticate(scanner);
+            System.out.println();
+            System.out.println("Connecting to UserFeature...");
+
+            UserFeature.execute(
+                    scanner,
+                    role3
+            );
+        }
+
+
+        // ==========================================
+        // CLOSE SCANNER
+        // ==========================================
 
         scanner.close();
 
-        System.out.println("\n========================================");
-        System.out.println("       ALL LOGIN TESTS COMPLETE");
+
+        // ==========================================
+        // COMPLETE
+        // ==========================================
+
+        System.out.println();
+        System.out.println("========================================");
+        System.out.println("          ALL TESTS COMPLETE");
         System.out.println("========================================");
     }
 }
