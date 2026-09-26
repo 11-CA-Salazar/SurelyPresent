@@ -34,32 +34,34 @@ public class GymMenu {
 
                         if (tierInput.equals("1")) { // Option 1: User chooses to hire a trainer (VIP path)
                             // Display VIP profile details
-                            System.out.println("-----USER PROFILE-----");
-                            System.out.println("Username: ########            ");
-                            System.out.println("Membership: VIP       ");
-                            System.out.println("Trainer hired: #######       \n");
+                            System.out.println("+------------USER PROFILE---------------------------+");
+                            System.out.println("| Username: #########                                |");
+                            System.out.println("| Membership: Regular (UPGRADE?)                     |");
+                            System.out.println("| Trainer hired: (UNAVAILABLE: VIP membership needed)|");
+                            System.out.println("+----------------------------------------------------+\n");
 
                             // Display that the user has an assigned trainer
                             System.out.println("Trainer ####### assigned\n");
 
                             // Display exit navigation banner
-                            System.out.println("============================");
-                            System.out.println("         3. EXIT            ");
-                            System.out.println("============================\n");
+                            System.out.println("==============================");
+                            System.out.println("|         3. EXIT            |");
+                            System.out.println("==============================\n");
 
                         } else if (tierInput.equals("2")) { // Option 2: The automated input is 2, but the option should be one: User tries to hire a trainer but needed to upgrade
                             // Display Regular profile details with upgrade notification
-                            System.out.println("-----USER PROFILE-----");
-                            System.out.println("Username: #########           ");
-                            System.out.println("Membership: Regular (UPGRADE?) ");
-                            System.out.println("Trainer hired: (UNAVAILABLE: VIP membership needed)        \n");
+                            System.out.println("+------------USER PROFILE---------------------------+");
+                            System.out.println("| Username: #########                                |");
+                            System.out.println("| Membership: Regular (UPGRADE?)                     |");
+                            System.out.println("| Trainer hired: (UNAVAILABLE: VIP membership needed)|");
+                            System.out.println("+----------------------------------------------------+\n");
 
-                            System.out.println("Need to upgrade membership\n");
+                            System.out.println("Need to upgrade membership!!\n");
 
                             // Display exit navigation banner
-                            System.out.println("============================");
-                            System.out.println("         3. EXIT            ");
-                            System.out.println("=============================\n");
+                            System.out.println("==============================");
+                            System.out.println("|         3. EXIT            |");
+                            System.out.println("==============================\n");
                         }
                     }
                     break;
