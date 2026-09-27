@@ -15,8 +15,7 @@ public class MainMenuTest {
         // AUTOMATED INPUT
         // ==========================================
 
-        StringBuilder simulatedUserInput =
-                new StringBuilder();
+        StringBuilder simulatedUserInput = new StringBuilder();
 
 
         // ==========================================
@@ -50,22 +49,14 @@ public class MainMenuTest {
         // CREATE SCANNER
         // ==========================================
 
-        Scanner scanner =
-                new Scanner(
-                        new ByteArrayInputStream(
-                                simulatedUserInput
-                                        .toString()
-                                        .getBytes()
-                        )
-                );
+        Scanner scanner = new Scanner(new ByteArrayInputStream(simulatedUserInput.toString().getBytes()));
 
 
         // ==========================================
         // CREATE LOGIN SYSTEM
         // ==========================================
 
-        LoginSystem loginSystem =
-                new LoginSystem();
+        LoginSystem loginSystem = new LoginSystem();
 
 
         // ==========================================
@@ -78,19 +69,14 @@ public class MainMenuTest {
         System.out.println("             LOGIN TEST #1");
         System.out.println("========================================");
 
-        String role1 =
-                loginSystem.authenticate(scanner);
+        String role1 = loginSystem.authenticate(scanner);
 
 
         if (role1 != null) {
 
             System.out.println();
             System.out.println("Connecting to UserFeature...");
-
-            UserFeature.execute(
-                    scanner,
-                    role1
-            );
+            UserFeature.execute(scanner, role1);
         }
 
 
@@ -104,8 +90,7 @@ public class MainMenuTest {
         System.out.println("             LOGIN TEST #2");
         System.out.println("========================================");
 
-        String role2 =
-                loginSystem.authenticate(scanner);
+        String role2 = loginSystem.authenticate(scanner);
 
 
         if (role2 != null) {
@@ -113,10 +98,7 @@ public class MainMenuTest {
             System.out.println();
             System.out.println("Connecting to UserFeature...");
 
-            UserFeature.execute(
-                    scanner,
-                    role2
-            );
+            UserFeature.execute(scanner, role2);
         }
 
 
@@ -139,10 +121,7 @@ public class MainMenuTest {
             System.out.println();
             System.out.println("Connecting to UserFeature...");
 
-            UserFeature.execute(
-                    scanner,
-                    role3
-            );
+            UserFeature.execute(scanner, role3);
         }
 
 
