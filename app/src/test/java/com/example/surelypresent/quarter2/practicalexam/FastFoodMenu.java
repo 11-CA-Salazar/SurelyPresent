@@ -3,10 +3,16 @@ package com.example.surelypresent.quarter2.practicalexam;
 import java.util.Scanner;
 
 public class FastFoodMenu {
+
+    // Starts the fast food ordering system.
     public void start(Scanner scanner) {
 
+        // Controls whether the ordering loop should continue.
         boolean ordering = true;
 
+        // ==========================================
+        // WELCOME SCREEN
+        // ==========================================
         System.out.println();
         System.out.println("==========================================");
         System.out.println("       🍔 FAST FOOD ORDERING SYSTEM 🍟");
@@ -14,8 +20,12 @@ public class FastFoodMenu {
         System.out.println("        Welcome! What would you like?");
         System.out.println("==========================================");
 
+        // Continue accepting choices while the system is active.
         while (ordering && scanner.hasNextLine()) {
 
+            // ==========================================
+            // MAIN MENU
+            // ==========================================
             System.out.println();
             System.out.println("+----------------------------------------+");
             System.out.println("|              MAIN MENU                 |");
@@ -26,10 +36,15 @@ public class FastFoodMenu {
             System.out.println("+----------------------------------------+");
             System.out.print("Choose an option: ");
 
+            // Read and clean the user's menu selection.
             String input = scanner.nextLine().trim();
 
+            // Determine what action should be performed.
             switch (input) {
 
+                // ==========================================
+                // BURGER ORDER
+                // ==========================================
                 case "1":
 
                     System.out.println();
@@ -63,6 +78,8 @@ public class FastFoodMenu {
                             );
 
                         } else {
+
+                            // Handles an invalid burger option.
                             System.out.println();
                             System.out.println(
                                     "✗ ERROR: Invalid burger option."
@@ -71,6 +88,9 @@ public class FastFoodMenu {
                     }
                     break;
 
+                // ==========================================
+                // FRIES ORDER
+                // ==========================================
                 case "2":
 
                     System.out.println();
@@ -105,6 +125,7 @@ public class FastFoodMenu {
 
                         } else {
 
+                            // Handles an invalid fries option.
                             System.out.println();
                             System.out.println(
                                     "✗ ERROR: Invalid fries option."
@@ -113,6 +134,9 @@ public class FastFoodMenu {
                     }
                     break;
 
+                // ==========================================
+                // EXIT SYSTEM
+                // ==========================================
                 case "3":
 
                     System.out.println();
@@ -122,9 +146,13 @@ public class FastFoodMenu {
                     System.out.println("     🍔 Have a great day! 🍟");
                     System.out.println("==========================================");
 
+                    // Stop the ordering loop.
                     ordering = false;
                     break;
 
+                // ==========================================
+                // INVALID MAIN MENU OPTION
+                // ==========================================
                 default:
 
                     System.out.println();
