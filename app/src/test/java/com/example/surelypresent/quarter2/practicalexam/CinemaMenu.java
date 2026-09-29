@@ -20,7 +20,7 @@ public class CinemaMenu {
                     case "2":
                         BuySnacks(scanner);
                         break;
-                    case "3":
+                        case "3":
                         System.out.println("Exiting System");
                         running = false;
                         break;
@@ -28,11 +28,12 @@ public class CinemaMenu {
                 }
             }
         }
+
     public static void buyTicket(Scanner scanner) { // Class for buying ticket
         System.out.println("Please enter age:");
         int age = 0;
         try {
-            age = Integer.parseInt(scanner.nextLine().trim());
+            age = Integer.parseInt(scanner.nextLine().trim()); // Handles Errors
         } catch (NumberFormatException e) {
             System.out.println("Invalid number, please return to main menu");
         }
