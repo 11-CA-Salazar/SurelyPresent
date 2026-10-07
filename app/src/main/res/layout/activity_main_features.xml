@@ -18,11 +18,11 @@
         tools:layout_editor_absoluteY="1dp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="365dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="152dp"
+        android:id="@+id/imageButton1"
+        android:layout_width="362dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,12 +30,25 @@
         app:srcCompat="@drawable/studentexample" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="364dp"
-        android:layout_height="101dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="362dp"
+        android:layout_height="88dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/studentexample2"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="260dp" />
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="362dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="320dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/studentexample3"
+        tools:layout_editor_absoluteX="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
