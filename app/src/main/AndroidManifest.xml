@@ -91,6 +91,10 @@
             android:name=".Welcome.ForgotPassword"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainFeature.Attendance"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
