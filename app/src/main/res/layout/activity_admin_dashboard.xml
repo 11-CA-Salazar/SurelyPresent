@@ -7,4 +7,89 @@
     android:layout_height="match_parent"
     tools:context=".MainDashboard.AdminDashboard">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="765dp"
+        android:layout_height="881dp"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="-177dp"
+        tools:layout_editor_absoluteY="-55dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="336dp"
+        android:layout_height="319dp"
+        app:srcCompat="@drawable/element2"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-41dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/element1"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="270dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/admin_profile" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="339dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="572dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Time of Location"
+        android:padding="0dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/timeoflocation"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="337dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="456dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Time of Location"
+        android:padding="0dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/teacherlist"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="337dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="328dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Time of Location"
+        android:padding="0dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/sectionlist"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    androidx.constraintlayout.widget.ConstraintLayout>
