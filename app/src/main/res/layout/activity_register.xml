@@ -79,7 +79,7 @@
         android:layout_width="132dp"
         android:layout_height="31dp"
         android:src="@drawable/screenshot_2026_10_14_141029"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="581dp"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="577dp" />
 
