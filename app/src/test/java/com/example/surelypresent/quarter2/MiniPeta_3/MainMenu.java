@@ -37,7 +37,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- PROFILE -----");
+            System.out.println("-----: PROFILE :-----");
 
             System.out.println("NAME: CLYDE");
             System.out.println("ROLE: ADMIN");
@@ -49,7 +49,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLASS LIST -----");
+            System.out.println("-----: CLASS LIST :-----");
 
             System.out.println("Class 1");
             System.out.println("Class 2");
@@ -63,7 +63,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- ADVISORY -----");
+            System.out.println("-----: ADVISORY :-----");
 
             System.out.println("ADVISORY CLASS: CARLO ACUTIS");
             System.out.println("ADVISOR: JOAQUIN");
@@ -74,7 +74,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- OFFICERS -----");
+            System.out.println("-----: OFFICERS :-----");
 
             System.out.println("VICE PRESIDENT");
             System.out.println("SECRETARY");
@@ -88,7 +88,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- AUDIT -----");
+            System.out.println("-----: AUDIT :-----");
 
             System.out.println("TOTAL FUNDS: PHP 10,000");
             System.out.println("EXPENSES: PHP 3,500");
@@ -100,7 +100,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- ATTENDANCE -----");
+            System.out.println("-----: ATTENDANCE :-----");
 
             System.out.println("PRESENT: 25");
             System.out.println("ABSENT: 3");
@@ -112,7 +112,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLEANERS -----");
+            System.out.println("-----: CLEANERS :-----");
 
             System.out.println("CLEANER 1: CLASSROOM");
             System.out.println("CLEANER 2: RESTROOM");
@@ -140,7 +140,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- PROFILE -----");
+            System.out.println("-----: PROFILE :-----");
 
             System.out.println("NAME: JOAQUIN");
             System.out.println("ROLE: TEACHER");
@@ -152,7 +152,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLASS LIST -----");
+            System.out.println("-----: CLASS LIST :-----");
 
             System.out.println("Class 1");
             System.out.println("Class 2");
@@ -166,7 +166,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- ADVISORY -----");
+            System.out.println("-----: ADVISORY :-----");
 
             System.out.println("ADVISORY CLASS: CARLO ACUTIS");
             System.out.println("ADVISOR: JOAQUIN");
@@ -177,7 +177,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- OFFICERS -----");
+            System.out.println("-----: OFFICERS :-----");
 
             System.out.println("VICE PRESIDENT");
             System.out.println("SECRETARY");
@@ -196,20 +196,20 @@ public class MainMenu {
             System.out.println("MAIN MENU FEATURES");
             System.out.println();
 
-            System.out.println("---- VICE/PRESIDENT ----");
+            System.out.println("----: VICE/PRESIDENT :----");
             System.out.println("1. AUDIT");
             System.out.println("2. ATTENDANCE");
             System.out.println("3. CLEANERS");
 
             System.out.println();
 
-            System.out.println("---- ASST/SECRETARY ----");
+            System.out.println("----: ASST/SECRETARY :----");
             System.out.println("1. ATTENDANCE");
             System.out.println("2. CLEANERS");
 
             System.out.println();
 
-            System.out.println("---- TREASURER/AUDITOR ----");
+            System.out.println("----: TREASURER/AUDITOR :----");
             System.out.println("1. AUDIT");
             System.out.println("2. CLEANERS");
 
@@ -219,7 +219,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- AUDIT -----");
+            System.out.println("-----: AUDIT :-----");
 
             System.out.println("TOTAL FUNDS: PHP 10,000");
             System.out.println("EXPENSES: PHP 3,500");
@@ -231,7 +231,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- ATTENDANCE -----");
+            System.out.println("-----: ATTENDANCE :-----");
 
             System.out.println("PRESENT: 25");
             System.out.println("ABSENT: 3");
@@ -243,7 +243,7 @@ public class MainMenu {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLEANERS -----");
+            System.out.println("-----: CLEANERS :-----");
 
             System.out.println("CLEANER 1: CLASSROOM");
             System.out.println("CLEANER 2: RESTROOM");

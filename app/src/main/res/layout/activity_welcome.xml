@@ -26,7 +26,6 @@
         android:layout_height="527dp"
         android:src="@drawable/student_list__2__removebg_preview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="309dp" />
 
@@ -37,7 +36,7 @@
         android:src="@drawable/download"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="41dp" />
+        tools:layout_editor_absoluteY="43dp" />
 
     <ImageView
         android:id="@+id/imageView26"

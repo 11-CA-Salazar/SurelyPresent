@@ -30,7 +30,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLASS LIST -----");
+            System.out.println("-----: CLASS LIST :-----");
 
             System.out.println("Class 1: ADVISOR: ######");
             System.out.println("Class 2: ADVISOR: ######");
@@ -44,7 +44,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- TEACHER LIST -----");
+            System.out.println("-----: TEACHER LIST :-----");
 
             System.out.println("Teacher Joaquin");
             System.out.println("Teacher Example");
@@ -55,7 +55,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- TIME OF LOCATION -----");
+            System.out.println("-----: TIME OF LOCATION :-----");
 
             System.out.println();
 
@@ -65,8 +65,8 @@ public class UserFeature {
 
             System.out.println();
 
-            System.out.println("----- TEACHER JOAQUIN -----");
-            System.out.println("----- CARLO ACUTIS -----");
+            System.out.println("-----: TEACHER JOAQUIN :-----");
+            System.out.println("-----: CARLO ACUTIS :-----");
 
             System.out.println();
             System.out.println("CLASSROOM: 10:30 AM");
@@ -76,8 +76,8 @@ public class UserFeature {
 
             System.out.println();
 
-            System.out.println("----- STUDENT CERBITO -----");
-            System.out.println("----- CARLO ACUTIS -----");
+            System.out.println("-----: STUDENT CERBITO :-----");
+            System.out.println("-----: CARLO ACUTIS :-----");
 
             System.out.println();
             System.out.println("CLASSROOM: 10:30 AM");
@@ -122,7 +122,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLASSROOM -----");
+            System.out.println("-----: CLASSROOM :-----");
 
             System.out.println(
                     "TEACHER JOAQUIN: CLASSROOM: 10:30 AM"
@@ -134,7 +134,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- GYM -----");
+            System.out.println("-----: GYM :-----");
 
             System.out.println(
                     "TEACHER JOAQUIN: GYM: 1:00 PM"
@@ -146,7 +146,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- COMPUTER LAB -----");
+            System.out.println("-----: COMPUTER LAB :-----");
 
             System.out.println(
                     "TEACHER JOAQUIN: COMPUTER LAB: 2:00 PM"
@@ -158,7 +158,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- SCIENCE LABORATORY -----");
+            System.out.println("-----: SCIENCE LABORATORY :-----");
 
             System.out.println(
                     "TEACHER JOAQUIN: SCIENCE LABORATORY: 3:00 PM"
@@ -201,7 +201,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CLASSROOM -----");
+            System.out.println("-----: CLASSROOM :-----");
 
             System.out.println("CLASSROOM: 10:30 AM");
 
@@ -211,7 +211,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- RESTROOM -----");
+            System.out.println("-----: RESTROOM :-----");
 
             System.out.println("RESTROOM: 11:00 AM");
 
@@ -221,7 +221,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- CANTEEN -----");
+            System.out.println("-----: CANTEEN :-----");
 
             System.out.println("CANTEEN: 12:30 PM");
 
@@ -231,7 +231,7 @@ public class UserFeature {
             // ==========================================
 
             System.out.println();
-            System.out.println("----- OTHERS -----");
+            System.out.println("-----: OTHERS :-----");
 
             System.out.println("GYM: 1:00 PM");
             System.out.println("COMPUTER LAB: 2:00 PM");

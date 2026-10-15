@@ -119,7 +119,7 @@ public class MainMenuTest {
         if (role3 != null) {
 
             System.out.println();
-            System.out.println("Connecting to UserFeature...");
+            System.out.println("Initializing UserFeature...");
 
             UserFeature.execute(scanner, role3);
         }
