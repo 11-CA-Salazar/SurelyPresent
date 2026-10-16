@@ -9,36 +9,37 @@
 
     <ImageView
         android:id="@+id/mcsLogo"
-        android:layout_width="113dp"
-        android:layout_height="103dp"
+        android:layout_width="158dp"
+        android:layout_height="134dp"
+        android:contentDescription="MCS LOGO"
         android:src="@drawable/mcslogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <ImageButton
         android:id="@+id/searchBar"
-        android:layout_width="360dp"
-        android:layout_height="59dp"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        android:background="@drawable/searchBar"
         android:contentDescription="studentlistButton"
-        android:scaleType="fitXY"
-        android:src="@drawable/searchBar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.307"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/studenList1"
         android:layout_width="362dp"
         android:layout_height="72dp"
+        android:background="@drawable/studentexample1"
         android:contentDescription="studentlistButton"
         android:scaleType="center"
-        android:src="@drawable/studentexample1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
@@ -50,23 +51,23 @@
         android:id="@+id/studentlist2"
         android:layout_width="362dp"
         android:layout_height="72dp"
+        android:background="@drawable/studenlist2"
         android:contentDescription="studentlistButton"
         android:scaleType="center"
-        android:src="@drawable/studenlist2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531" />
+        app:layout_constraintVertical_bias="0.529" />
 
     <ImageButton
         android:id="@+id/studentlist5"
         android:layout_width="362dp"
         android:layout_height="72dp"
+        android:background="@drawable/studentlist3"
         android:contentDescription="studentlistButton"
         android:scaleType="center"
-        android:src="@drawable/studentlist3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,9 +79,9 @@
         android:layout_width="362dp"
         android:layout_height="72dp"
         android:layout_marginTop="512dp"
+        android:background="@drawable/studentList5"
         android:contentDescription="studentlistButton"
         android:scaleType="center"
-        android:src="@drawable/studentList5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -90,8 +91,7 @@
         android:layout_width="362dp"
         android:layout_height="72dp"
         android:contentDescription="studentlistButton"
-        android:scaleType="center"
-        android:src="@drawable/studentList4"
+        android:background="@drawable/studentList4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,8 +107,8 @@
         android:src="@drawable/timeandlocation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229" />
+        app:layout_constraintVertical_bias="0.231" />
 </androidx.constraintlayout.widget.ConstraintLayout>
