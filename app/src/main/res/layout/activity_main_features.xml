@@ -8,29 +8,107 @@
     tools:context=".MainFeatures">
 
     <ImageView
-        android:id="@+id/adminIcon"
-        android:layout_width="119dp"
-        android:layout_height="30dp"
-        android:contentDescription="AdminIcon"
-        android:scaleType="fitXY"
-        android:src="@drawable/adminicon"
+        android:id="@+id/mcsLogo"
+        android:layout_width="113dp"
+        android:layout_height="103dp"
+        android:src="@drawable/mcslogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.07" />
 
-    <TextView
+    <ImageButton
         android:id="@+id/searchBar"
-        android:layout_width="367dp"
-        android:layout_height="40dp"
-        android:background="@drawable/searchBar"
+        android:layout_width="360dp"
+        android:layout_height="59dp"
+        android:contentDescription="studentlistButton"
+        android:scaleType="fitXY"
+        android:src="@drawable/searchBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <ImageButton
+        android:id="@+id/studenList1"
+        android:layout_width="362dp"
+        android:layout_height="72dp"
+        android:contentDescription="studentlistButton"
+        android:scaleType="center"
+        android:src="@drawable/studentexample1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <ImageButton
+        android:id="@+id/studentlist2"
+        android:layout_width="362dp"
+        android:layout_height="72dp"
+        android:contentDescription="studentlistButton"
+        android:scaleType="center"
+        android:src="@drawable/studenlist2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <ImageButton
+        android:id="@+id/studentlist5"
+        android:layout_width="362dp"
+        android:layout_height="72dp"
+        android:contentDescription="studentlistButton"
+        android:scaleType="center"
+        android:src="@drawable/studentlist3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintVertical_bias="0.904" />
 
+    <ImageButton
+        android:id="@+id/studentlist4"
+        android:layout_width="362dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="512dp"
+        android:contentDescription="studentlistButton"
+        android:scaleType="center"
+        android:src="@drawable/studentList5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/studentlist5"
+        android:layout_width="362dp"
+        android:layout_height="72dp"
+        android:contentDescription="studentlistButton"
+        android:scaleType="center"
+        android:src="@drawable/studentList4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/timeandlocation"
+        android:layout_width="129dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/timeandlocation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
 </androidx.constraintlayout.widget.ConstraintLayout>
