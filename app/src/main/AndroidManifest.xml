@@ -136,6 +136,10 @@
             android:name=".app.LoginFeature.presentation.account_recovery_phonenumber"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
