@@ -145,6 +145,10 @@
             android:name=".app.LoginFeature.presentation.authVerification"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.TimeAndLocation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
