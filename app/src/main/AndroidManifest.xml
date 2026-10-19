@@ -181,6 +181,10 @@
             android:name=".app.MainFunctions.presentation.StudentAudit"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.ChangePasswordRequest"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
