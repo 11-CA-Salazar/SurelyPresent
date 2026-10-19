@@ -111,6 +111,31 @@
             android:name=".app.Dashboard.presentation.AdminDashboard"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.LoginScreen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.accountRecovery"
+            android:exported="false"
+            android:theme="@style/Theme.SurelyPresent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.AccountRecovery_Email"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.accountSignUp"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.changePassword"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.account_recovery_phonenumber"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
