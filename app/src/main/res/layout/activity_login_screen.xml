@@ -33,7 +33,6 @@
             android:contentDescription="School logo"
             android:src="@drawable/mcs_logo" />
 
-        <!-- ID number -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
