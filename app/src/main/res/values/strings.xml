@@ -47,4 +47,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.\
+        Quisque non elit mauris. Cras euismod, nec ac finibus finibus, felis dui suscipit
+        \purus, a maximus leo ligula at dolor. Morbi et malesuada purus. Phasellus a lacus \
+        sit amet urna tempor sollicitudin. Cras pretium tempor elit blandit egestas.</string>
 </resources>
