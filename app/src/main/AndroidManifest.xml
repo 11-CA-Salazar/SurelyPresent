@@ -193,6 +193,10 @@
             android:name=".app.Dashboard.presentation.SecretaryDashboard"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.Dashboard.presentation.TreasurerDashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

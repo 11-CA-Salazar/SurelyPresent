@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <!-- SECRETARY ROLE SELECTORS -->
+        <RadioGroup
+            android:id="@+id/roleGroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/treasurerOption"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/button_gradient"
+
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="TREASURER"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:checked="true" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/auditorOption"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/button_gradient"
+
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="AUDITOR"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:checked="true" />
+
+        </RadioGroup>
+
+        <!-- CLASSROOM -->
+        <Button
+            android:id="@+id/classroomButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_gradient"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:stateListAnimator="@null"
+            android:text="CLASSROOM"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- RESTROOM -->
+        <Button
+            android:id="@+id/restroomButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_gradient"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:stateListAnimator="@null"
+            android:text="RESTROOM"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- CLINIC -->
+        <Button
+            android:id="@+id/clinicButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_gradient"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:stateListAnimator="@null"
+            android:text="CLINIC"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- DASHBOARD -->
+        <Button
+            android:id="@+id/dashboardButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_gradient"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:stateListAnimator="@null"
+            android:text="DASHBOARD"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- DOWN ARROW -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="-24dp"
+            android:gravity="center"
+            android:text="↓"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
