@@ -95,6 +95,96 @@
             android:name=".MainFeature.Attendance"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.LoginFeature"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.loginScreen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.Dashboard.presentation.TeacherDashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.Dashboard.presentation.AdminDashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.LoginScreen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.accountRecovery"
+            android:exported="false"
+            android:theme="@style/Theme.SurelyPresent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.AccountRecovery_Email"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.accountSignUp"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.changePassword"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.LoginFeature.presentation.account_recovery_phonenumber"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".app.LoginFeature.presentation.authVerification"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.TimeAndLocation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.StudentAttendance"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.StudentsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.StudentsAttendance"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.Dashboard.presentation.TeachersSectionList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.OfficersStudentAttendance"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.calendar"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.Student"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.StudentAudit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.MainFunctions.presentation.ChangePasswordRequest"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
