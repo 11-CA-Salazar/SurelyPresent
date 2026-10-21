@@ -185,6 +185,10 @@
             android:name=".app.MainFunctions.presentation.ChangePasswordRequest"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.Dashboard.presentation.vpresident_dashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
