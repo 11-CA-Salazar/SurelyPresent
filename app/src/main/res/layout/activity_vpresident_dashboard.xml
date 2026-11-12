@@ -131,6 +131,17 @@
             android:textSize="50sp"
             android:textStyle="bold" />
 
+        <!-- STATUS TEXT -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
 
     </LinearLayout>
 

@@ -83,7 +83,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_srcCompat="@drawable/bg_input"
+        app:srcCompat="@drawable/bg_input"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <!-- Scrollable Content -->

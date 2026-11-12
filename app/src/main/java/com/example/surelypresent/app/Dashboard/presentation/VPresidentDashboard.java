@@ -1,5 +1,5 @@
 
-package com.example.classroomui;
+package com.example.surelypresent.app.Dashboard.presentation;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,13 +8,15 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.surelypresent.R;
+
 public class VPresidentDashboard extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.vpresident_dashboard);
+        setContentView(R.layout.activity_vpresident_dashboard);
 
         TextView statusText = findViewById(R.id.statusText);
         RadioGroup roleGroup = findViewById(R.id.roleGroup);
