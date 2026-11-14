@@ -81,8 +81,10 @@ public class LoginScreen extends AppCompatActivity {
             finish();
         });
 
-        tvForgot.setOnClickListener(v ->
-                Toast.makeText(this, "Forgot password coming soon", Toast.LENGTH_SHORT).show());
+        tvForgot.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginScreen.this, AccountRecovery_Email.class);
+            startActivity(intent);
+        });
 
         tvRegister.setOnClickListener(v -> {
             Intent intent = new Intent(LoginScreen.this, accountSignUp.class);
