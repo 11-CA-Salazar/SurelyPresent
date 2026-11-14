@@ -1,10 +1,11 @@
 package com.example.surelypresent.app.LoginFeature.presentation;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.InputType;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,14 +16,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 
 import com.example.surelypresent.R;
+import com.example.surelypresent.app.Dashboard.presentation.OrdinaryStudent;
 
 public class LoginScreen extends AppCompatActivity {
 
     private boolean passwordVisible = false;
+    private EditText etId, etPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +36,9 @@ public class LoginScreen extends AppCompatActivity {
             return insets;
         });
 
-        EditText etId = findViewById(R.id.etId);
-        EditText etPassword = findViewById(R.id.etPassword);
+        etId = findViewById(R.id.etId);
+        etPassword = findViewById(R.id.etPassword);
         ImageView ivToggle = findViewById(R.id.ivTogglePassword);
-        CheckBox cbRemember = findViewById(R.id.cbRemember);
         Button btnLogin = findViewById(R.id.btnLogin);
         TextView tvForgot = findViewById(R.id.tvForgot);
         TextView tvRegister = findViewById(R.id.tvRegister);
@@ -55,7 +55,7 @@ public class LoginScreen extends AppCompatActivity {
                 ivToggle.setImageResource(R.drawable.ic_eye_off);
             }
 
-            etPassword.setSelection(etPassword.getText().length()); // keep cursor at the end
+            etPassword.setSelection(etPassword.getText().length());
         });
 
         // Log in -> Ordinary Student page
@@ -74,32 +74,38 @@ public class LoginScreen extends AppCompatActivity {
                 return;
             }
 
+            SharedPreferences prefs = getSharedPreferences("accounts", MODE_PRIVATE);
+            String saved = prefs.getString("pw_" + id, null);
+            if (saved != null && !saved.equals(password)) {
+                etPassword.setError("Wrong password");
+                etPassword.requestFocus();
+                return;
+            }
+
             // TODO: validate credentials (database/API) before continuing
-            Intent intent = new Intent(LoginScreen.this, OrdinaryStudentActivity.class);
+            Intent intent = new Intent(LoginScreen.this, OrdinaryStudent.class);
             intent.putExtra("ID_NUMBER", id);
             startActivity(intent);
             finish();
         });
 
-        tvForgot.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginScreen.this, AccountRecovery_Email.class);
-            startActivity(intent);
-        });
+        // Forgot password -> Email recovery
+        tvForgot.setOnClickListener(v ->
+                startActivity(new Intent(LoginScreen.this, AccountRecovery_Email.class)));
 
-        tvRegister.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginScreen.this, accountSignUp.class);
-            startActivity(intent);
-        });
+        // Register -> Sign up
+        tvRegister.setOnClickListener(v ->
+                startActivity(new Intent(LoginScreen.this, accountSignUp.class)));
     }
 
-    // ===== Second screen, nested inside this file =====
-    public static class OrdinaryStudentActivity extends AppCompatActivity {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            EdgeToEdge.enable(this);
-            setContentView(R.layout.activity_ordinary_student);
-        }
+    // Receives the ID and new password after changing the password
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        String id = intent.getStringExtra("ID_NUMBER");
+        String pass = intent.getStringExtra("NEW_PASSWORD");
+        if (id != null) etId.setText(id);
+        if (pass != null) etPassword.setText(pass);
     }
 }
