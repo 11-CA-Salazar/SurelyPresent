@@ -92,21 +92,21 @@ public class OrdinaryStudent extends AppCompatActivity {
 
         // Others button click listener
         if (othersButton != null) {
-            othersButton.setOnClickListener(v -> navigateToLocation("OTHERS"));
+            othersButton.setOnClickListener(v -> {
+                Intent intent = new Intent(OrdinaryStudent.this, MainDashboard.class);
+                intent.putExtra("ID_NUMBER", studentId);
+                intent.putExtra("ROLE", selectedRole);
+                startActivity(intent);
+            });
+        }        // Others button click listener
+        if (othersButton != null) {
+            othersButton.setOnClickListener(v -> {
+                Intent intent = new Intent(OrdinaryStudent.this, MainDashboard.class);
+                intent.putExtra("ID_NUMBER", studentId);
+                intent.putExtra("ROLE", selectedRole);
+                startActivity(intent);
+            });
         }
-    }
+    }   // <-- add this: closes setupEventListeners()
 
-    private void navigateToLocation(String location) {
-        String message = location + " selected for " + selectedRole;
-        if (studentId != null && !studentId.isEmpty()) {
-            message += " (ID: " + studentId + ")";
-        }
-        Toast.makeText(OrdinaryStudent.this, message, Toast.LENGTH_SHORT).show();
-
-        Intent intent = new Intent(OrdinaryStudent.this, TimeAndLocation.class);
-        intent.putExtra("ID_NUMBER", studentId);
-        intent.putExtra("ROLE", selectedRole);
-        intent.putExtra("LOCATION", location);
-        startActivity(intent);
-    }
-}
+    private void navigateToLocation(String location) {}}
