@@ -20,7 +20,7 @@ import com.example.surelypresent.app.MainFunctions.presentation.TimeAndLocation;
 public class OrdinaryStudent extends AppCompatActivity {
 
     private String studentId = "";
-    private String selectedRole = "ORDINARY STUDENT";
+    private String selectedRole = "ORDINARY STUDENTT";
 
     private RadioGroup roleGroup;
     private RadioButton auditorOption;
