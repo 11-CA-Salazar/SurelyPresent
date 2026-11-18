@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.surelypresent.R;
+import com.example.surelypresent.MainMenuDashboard;
 import com.example.surelypresent.app.MainFunctions.presentation.TimeAndLocation;
 
 public class OrdinaryStudent extends AppCompatActivity {
@@ -93,20 +94,19 @@ public class OrdinaryStudent extends AppCompatActivity {
         // Others button click listener
         if (othersButton != null) {
             othersButton.setOnClickListener(v -> {
-                Intent intent = new Intent(OrdinaryStudent.this, MainDashboard.class);
-                intent.putExtra("ID_NUMBER", studentId);
-                intent.putExtra("ROLE", selectedRole);
-                startActivity(intent);
-            });
-        }        // Others button click listener
-        if (othersButton != null) {
-            othersButton.setOnClickListener(v -> {
-                Intent intent = new Intent(OrdinaryStudent.this, MainDashboard.class);
+                Intent intent = new Intent(OrdinaryStudent.this, MainMenuDashboard.class);
                 intent.putExtra("ID_NUMBER", studentId);
                 intent.putExtra("ROLE", selectedRole);
                 startActivity(intent);
             });
         }
-    }   // <-- add this: closes setupEventListeners()
+    }
 
-    private void navigateToLocation(String location) {}}
+    private void navigateToLocation(String location) {
+        Intent intent = new Intent(OrdinaryStudent.this, TimeAndLocation.class);
+        intent.putExtra("LOCATION", location);
+        intent.putExtra("ID_NUMBER", studentId);
+        intent.putExtra("ROLE", selectedRole);
+        startActivity(intent);
+    }
+}
