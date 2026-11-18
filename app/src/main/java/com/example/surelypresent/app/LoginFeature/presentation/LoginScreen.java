@@ -18,7 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.surelypresent.R;
-import com.example.surelypresent.app.Dashboard.presentation.OrdinaryStudent;
+import com.example.surelypresent.app.Dashboard.presentation.AdminDashboard;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -83,7 +83,7 @@ public class LoginScreen extends AppCompatActivity {
             }
 
             // TODO: validate credentials (database/API) before continuing
-            Intent intent = new Intent(LoginScreen.this, OrdinaryStudent.class);
+            Intent intent = new Intent(LoginScreen.this, AdminDashboard.class);
             intent.putExtra("ID_NUMBER", id);
             startActivity(intent);
             finish();
