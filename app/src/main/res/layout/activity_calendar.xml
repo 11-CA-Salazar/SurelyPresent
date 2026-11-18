@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#B9B7BC"
+    android:padding="16dp">
+
+    <!-- School Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="School Logo"
+        android:src="@drawable/mcs_logo" />
+
+    <!-- Calendar Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="14dp"
+        android:background="#30374F"
+        android:text="CALENDAR"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Calendar Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="#30374F">
+
+        <!-- Month Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Previous month"
+                android:src="@android:drawable/ic_media_previous"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvMonthYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="July 2026"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Next month"
+                android:src="@android:drawable/ic_media_next"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#777C8D" />
+
+        <!-- Weekday Labels -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="7">
+
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="Su" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="Mo" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="Tu" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="We" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="Th" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="Fr" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_columnWeight="1" android:gravity="center" android:text="Sa" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+
+        </GridLayout>
+
+        <!-- Calendar Dates: July 2026 -->
+        <GridLayout
+            android:id="@+id/calendarGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="6">
+
+            <!-- Previous Month -->
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="28" android:textColor="#B9BBC6" android:textSize="15sp" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="29" android:textColor="#B9BBC6" android:textSize="15sp" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="30" android:textColor="#B9BBC6" android:textSize="15sp" />
+
+            <!-- July 1–4 -->
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="1" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="2" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="3" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="4" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+
+            <!-- July 5–11 -->
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="5" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="6" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="7" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="8" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="9" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="10" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="11" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+
+            <!-- July 12–18 -->
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="12" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="13" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="14" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="15" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="16" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="17" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="18" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+
+            <!-- July 19–25 -->
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="19" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="20" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="21" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="22" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="23" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="24" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="25" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+
+            <!-- July 26–31 -->
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="26" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="27" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="28" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="29" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="30" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="40dp" android:layout_columnWeight="1" android:gravity="center" android:text="31" android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <!-- Flexible Space -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_gravity="start"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@android:drawable/ic_media_previous"
+        app:tint="#FFFFFF" />
+
+</LinearLayout>

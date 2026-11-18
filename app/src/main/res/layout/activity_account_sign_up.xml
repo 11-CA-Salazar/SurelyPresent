@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/main"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:fillViewport="true">
@@ -53,6 +54,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:background="@null"
                 android:hint="Phone Number/Email"
                 android:imeOptions="actionNext"
@@ -89,6 +91,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@null"
+                android:gravity="center_vertical"
                 android:hint="ID Number"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -125,6 +128,7 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:hint="Password"
+                android:gravity="center_vertical"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
@@ -168,6 +172,7 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:hint="Confirm password"
+                android:gravity="center_vertical"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
@@ -197,10 +202,11 @@
             android:textSize="13sp" />
 
         <Button
-            android:id="@+id/btnCreate"
+            android:id="@+id/btnRegister"
             android:layout_width="160dp"
             android:layout_height="56dp"
             android:layout_marginTop="12dp"
+            android:gravity="center"
             android:background="@drawable/bg_button"
             android:stateListAnimator="@null"
             android:text="Register"

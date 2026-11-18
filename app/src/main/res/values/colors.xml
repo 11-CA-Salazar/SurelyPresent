@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="text_card_blue">#0D5499</color>
+    <color name="dash_navy">#0D2B6E</color>
+    <color name="dash_sky">#6A93FF</color>
+    <color name="dash_teal">#1FD6D0</color>
+    <color name="dash_ripple">#33FFFFFF</color>
 </resources>
